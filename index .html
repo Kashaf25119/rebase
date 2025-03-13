@@ -10,5 +10,23 @@
     <p>
         Git rebase is a command that allows you to reapply commits on top of another base trip. It is very useful for keeping your commits organized and easy to read. It can be used to rewrite commit history by changing the commit order, combining commits, or squashing commits.
     </p>
+    <div class="rebase">
+        <h2>Rebase Example</h2>
+        <p>
+            Let's say you have a feature branch that is based on the master branch. You have made some commits to the feature branch, but the master branch has also been updated with new commits. You can use git rebase to reapply your commits on top of the new master branch commits.
+        </p>
+        <p>
+            Here is an example of how to use git rebase:
+        </p>
+        <pre>
+            <code>
+                git checkout feature
+                git rebase main
+            </code>
+        </pre>
+        <p>
+            This will reapply the commits from the feature branch on top of the master branch. If there are any conflicts, you will need to resolve them before continuing the rebase.
+        </p>
+    </div>
 </body>
 </html>
